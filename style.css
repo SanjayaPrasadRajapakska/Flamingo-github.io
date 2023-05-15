@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+
+:root {
+    --brand: #ff4d29;
+    --dark: #092032;
+    --body: #516171;
+    --border: rgba(0,0,0,0.08);
+    --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+    
+}
+
+
+body {
+    font-family: "Barlow", sans-serif;
+    color: var(--body);
+    line-height: 1.7;
+}
+
+h1,h2,h3,h4,h5,h6,
+.display-1,.display-2,.display-3,.display-4 {
+    font-weight: 700 !important;
+    color: var(--dark);
+}
+
+.bg-cover {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: var(--dark);
+    transition: all 0.4s ease;
+    font-weight: 500 ;
+}
+
+a:hover {
+    color: var(--brand);
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+/*top-navbar */
+.top-nav {
+    background-color: var(--brand);
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.top-nav p {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.top-nav i {
+    vertical-align: middle;
+}
+.social-links a {
+    width: 37px;
+    height: 37px;
+    display: inline-flex;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin-left: 5px;
+    font-size: 23px;/*icon size*/
+    margin-right: 5px;
+    
+    
+}
+
+.social-links .fb a:hover {
+    background-color: #fff;
+    color: blue;
+}
+
+.social-links .tw a:hover {
+    background-color: #fff;
+    color: rgb(0, 162, 255);
+}
+
+.social-links .gh a:hover {
+    background-color: #fff;
+    color:black;
+}
+
+.social-links .yt a:hover {
+    background-color: #fff;
+    color:red;
+}
+
+/*bottom-nav*/
+.navbar {
+    box-shadow: var(--shadow);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--dark);
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--brand);
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: var(--brand);
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.navbar-brand .dot {
+    color: var(--brand);
+}
+/*btn*/
+.btn {
+    padding: 8px 26px;
+}
+
+.btn-brand {
+    border-color: var(--brand);
+    background-color: var(--brand);
+    color: #fff;
+}
+
+.btn-brand:hover {
+    background-color: #d64022;
+    border-color: #d64022;
+    color: #fff;
+}
+
+ /* slide */
+ .slide {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slide1 {
+   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./img/bg_banner2.jpg);
+   
+}
+
+.slide2 {
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/bg_banner1.jpg);
+   
+}
+
+.slide .display-3 {
+   text-transform: uppercase;
+   color: #fff;
+}
+
+.hero-slider .owl-prev,
+.hero-slider .owl-next{
+   background-color: rgba(255, 255, 255, 0.3) !important;
+   width: 60px !important;
+   height: 60px !important;
+   display: block;
+   display: grid;
+   place-items: center;
+   color: #fff !important;
+   border-radius: 100px !important;
+   position: absolute;
+   top: 50%;/*add the middle of the slide*/
+   font-weight: 600 !important;
+   font-size: 12px !important;
+   transition: all 0.4s ease;
+   margin-top: -30px !important;
+}
+
+.owl-prev {
+   left: 0;
+}
+.owl-next {
+   right: 0;
+}
+
+.hero-slider .owl-prev:hover,
+.hero-slider .owl-next:hover {
+   background-color: var(--brand) !important; 
+}
+
+.owl-dot.active span{
+   background-color: var(--brand) !important;
+}
+
+/*info-box*/
+.info-box {
+    align-items: center;
+    display: flex;
+}
+
+.info-box img {
+    width: 90px;
+    
+}
+
+/*milestone*/
+#milestone {
+    background: linear-gradient(rgba(255, 77, 41, 0.85), rgba(255, 77, 41, 0.85)), url(./img/bg_banner1.jpg);
+   
+}
+
+#milestone h1,
+#milestone p {
+    color: #fff;
+}
+
+/*service*/
+
+.intro {margin-bottom: 36px;
+    text-align: center;}
+    
+    .intro p {
+        max-width: 500px;
+    }
+    .intro h6{
+        color: var(--brand);
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    
+    .intro h1 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .info-box {
+        align-items: center;
+        display: flex;
+    }
+    
+    .info-box img {
+        width: 90px;
+    }
+
+.service {
+    padding: 32px;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.service h5 {
+    margin-top: 24px;
+    margin-bottom: 14px;
+}
+
+.service img {
+    width: 90px;
+}
+
+/*Portfilo*/
+.project {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.project h6 {
+    font-weight: 400;
+}
+
+.project h6::before {
+    content: "";
+    height: 2px;
+    width: 30px;
+    display: inline-block;
+    background: var(--brand);
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+.project .overlay {
+    width: 100%;
+    height: 220px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(255, 76, 41, 0) 0%, var(--dark) 100%);
+}
+
+.project .content {
+    position: absolute;
+    left: 10%;
+    bottom: 10%
+}
+
+.project h2,
+.project h6 {
+    color: #fff;
+}
+
+
+/*team*/
+main .social-links a {
+    margin-top: 10px;
+}
+.team-member .img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member .overlay{
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 77, 41, 0.61);
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.team-member .social-links {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.4s ease;
+    opacity: 0;
+    
+}
+
+.team-member:hover .overlay {
+    opacity: 1;
+    top: 0;
+}
+
+.team-member:hover .social-links {
+    opacity: 1;
+    top: 50%;
+}
+
+.team-member h5 {
+    margin-top: 15px;
+}
+
+/*review*/
+
+#reviews {
+    background: linear-gradient(rgba(9, 32, 50, 0.7), rgba(9, 32, 50, 0.7)), url(./img/bg_banner1.jpg);
+}
+
+.review {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.review img {
+    width: 85px !important;
+    height: 85px;
+    border-radius: 100px;
+    margin: auto;
+}
+
+.review h4 {
+    margin-top: 16px;
+
+}
+
+.review h4, .review p {
+    color: #fff;
+}
+ 
+.review small {
+    color: #ff4d29;
+}
+
+.review p {
+    margin-top: 28px;
+}
+
+.review .stars {
+    color: #ff4d29;
+}
+
+.owl-theme .owl-dots .owl-dot span  {
+    margin-top: 20px;
+}
+
+/*blog*/
+
+.blog-post {
+    position: relative;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.blog-post .content {
+    padding: 32px;
+}
+
+.blog-post a {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--brand);
+    padding: 2px 12px;
+    border-radius: 100px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.blog-post h5 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    
+}
+
+.blog-post small {
+    text-transform: uppercase;
+    color: var(--brand);
+    text-decoration: underline;
+}
+
+/*footer*/
+
+footer {
+    
+    padding-top: 80px;
+    padding-bottom: 20px;
+    background: linear-gradient(rgba(9, 32, 50, 0.7), rgba(9, 32, 50, 0.7)), url(./img/bg_banner1.jpg);
+}
+
+.footer-top {
+    margin-bottom: 40px;
+    
+}
+
+.footer-bottom {
+    color: #ffffffb7;
+    padding-top: 40px;
+    border-top:1px solid rgba(255, 255, 255, 0.4);
+}
+
+footer .navbar-brand {
+    color: #fff !important;
+    margin-bottom: 20px;
+    display: inline-block;/*meya demiya yuthi mb sedimt*/
+}
+
+.conditions-section {
+    margin-top: 20px;
+    
+}
+
+.conditions-section a {
+    color: #fff;
+}
+.footer-top p {
+    color: rgba(255, 255, 255, 0.616);
+    font-size: 15px;
+}
+
+.footer-top .social-links a {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+}
+
+.conditions-section a:hover {
+    color: #ff4d29;
+}
+
+.footer-top .social-links {
+    margin-top: 30px;
+}
+
+/*form*/
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #ff4d29;
+}
+.form-control {
+    background-color: rgba(0, 0, 0, 0.04);
+    border-color: rgba(0, 0, 0, 0.04);;
+}
+
